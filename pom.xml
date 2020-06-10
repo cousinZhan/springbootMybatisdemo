@@ -70,26 +70,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			
-			<!-- mybatis generator 自动生成代码插件 -->
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.3.1</version>
-                <configuration>
-                    <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
-                    <overwrite>true</overwrite>
-                    <verbose>true</verbose>
-                </configuration>
-                <dependencies>
-                    <!-- 添加自定义的分页代码生成插件 -->
-                    <dependency>
-                        <groupId>org.linweiyu</groupId>
-                        <artifactId>PaginationPlugin</artifactId>
-                        <version>1.0-SNAPSHOT</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-			
+
 			
 		</plugins>
 	</build>
